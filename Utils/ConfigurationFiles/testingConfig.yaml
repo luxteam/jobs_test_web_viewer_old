@@ -1,0 +1,10 @@
+browser: Chrome
+UI:
+  root: https://dev.webusd.stvcis.com
+  projects: /projects
+chromeArguments: 
+  - --start-maximized
+chromeSettings:
+  download.default_directory: your/download/path # TODO: we need to rework the download test
+search:
+  searchText: Brick
