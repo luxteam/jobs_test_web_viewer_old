@@ -1,6 +1,4 @@
-from jobs_test_wml.UI_Tests.Common.common import BasePageElement
-from jobs_test_wml.UI_Tests.Common.locators import MainPageLocators, MaterialViewWindowLocators
-from jobs_test_wml.UI_Tests.Common.common import BasePageElement, UtilityFunctions
+from jobs_test_web_viewer.UI_Tests.Common.common import BasePageElement
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.action_chains import ActionChains

@@ -14,7 +14,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys
 from selenium.common.exceptions import NoSuchElementException, TimeoutException
-from jobs_test_wml.conftest import conf
+from jobs_test_web_viewer.conftest import conf
 
 @pytest.fixture(scope='class')
 def init_urls(request):

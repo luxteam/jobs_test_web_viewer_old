@@ -1,7 +1,8 @@
 browser: Chrome
 UI:
-  root: https://dev.webusd.stvcis.com
+  root: https://webusd.stvcis.com
   projects: /projects
+  main: /main
 chromeArguments: 
   - --start-maximized
 chromeSettings:
