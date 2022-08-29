@@ -6,7 +6,7 @@ from selenium.common.exceptions import TimeoutException
 from PIL import Image, ImageChops
 import os
 from jobs_test_web_viewer.UI_Tests.Common.locators import *
-from jobs_test_web_viewer.UI_Tests.Common.pages import ProjectsPage
+from jobs_test_web_viewer.UI_Tests.Common.pages import ProjectsPage, MainPage, FinalRenderPage
 from jobs_test_web_viewer.UI_Tests.Common.common import BaseSteps
 
 #################################################
@@ -50,4 +50,16 @@ class SmokeSteps(BaseSteps):
         else:
             print("Images are equal")
             assert True
+        return self
+
+    @allure.step
+    def open_final_render(self):
+        mainPage = MainPage(self.driver)
+        mainPage.open_final_render()
+        return self
+
+    @allure.step
+    def final_render(self, format="JPEG (Image)", width="1920", height="1080"):
+        finalRenderPage = FinalRenderPage(self.driver)
+        finalRenderPage.final_render(format=format, width=width, height=height)
         return self

@@ -16,3 +16,8 @@ class ElementClickable(BasePageElement):
             EC.element_to_be_clickable((By.XPATH, self.locator))
             )
         self.element.click()
+
+class ElementSelect(BasePageElement):
+
+    def select(self, option):
+        self.element.send_keys(option)
