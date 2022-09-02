@@ -20,12 +20,6 @@ class ProjectsPage(BasePage):
         project = ElementClickable(self.driver, project)
         project.click()
         try:
-            WebDriverWait(self.driver, 500).until(
-                EC.presence_of_element_located((By.XPATH, '//*[@class="animate-spin loader"]'))
-            )
-            WebDriverWait(self.driver, 500).until_not(
-                EC.presence_of_element_located((By.XPATH, '//*[@class="animate-spin loader"]'))
-            )
             time.sleep(40)
         except Exception as e:
             assert False
