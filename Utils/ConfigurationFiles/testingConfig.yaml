@@ -1,6 +1,6 @@
 browser: Chrome
 UI:
-  root: https://webusd.stvcis.com
+  root: https://dev.webusd.stvcis.com
   projects: /projects
   main: /main
 chromeArguments: 

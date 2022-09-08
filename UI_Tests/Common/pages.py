@@ -21,10 +21,10 @@ class ProjectsPage(BasePage):
         project.click()
         try:
             WebDriverWait(self.driver, 500).until(
-                EC.presence_of_element_located((By.XPATH, '//*[@class="animate-spin loader"]'))
+                EC.presence_of_element_located((By.XPATH, '//*[@class="animate-spin"]'))
             )
             WebDriverWait(self.driver, 500).until_not(
-                EC.presence_of_element_located((By.XPATH, '//*[@class="animate-spin loader"]'))
+                EC.presence_of_element_located((By.XPATH, '//*[@class="animate-spin"]'))
             )
             time.sleep(40)
         except Exception as e:
